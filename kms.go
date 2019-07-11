@@ -10,7 +10,7 @@ import (
 	cloudkms "cloud.google.com/go/kms/apiv1"
 )
 
-var rawStdEncoding = base64.StdEncoding.WithPadding(base64.NoPadding)
+var rawStdEncoding = base64.StdEncoding
 
 //KMSClient wrappter around *cloudkms.KeyManagementClient and ctx
 type KMSClient struct {
